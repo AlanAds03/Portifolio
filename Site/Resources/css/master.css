@@ -14,7 +14,6 @@ header{
 
 }
 .menu{
-display:inline-block;
 margin: 0;
 margin-bottom: 0;
 width: 100%;
@@ -25,29 +24,28 @@ width: 100%;
   text-decoration: none;
   display: inline-block;
   margin-bottom: 0;
-
+  margin-top: 0.9em;
+  padding: 15px;
+  height: 2em;
+  text-align: center;
+}
+.menu ul li:hover{
+  background: rgba(12,105,136,0.1);
+  border: 0.5 px solid;
 }
 
-@media screen and (min-width:900px) {
 .menu ul{
   box-sizing: border-box;
   list-style: none;
   margin-left: 60%;
-  display: inline-block;
+  display: table;
   margin-top:0;
   margin-bottom: 0;
-  border: 1px solid;
   padding-bottom: 0;
 }
 
-}
-@media screen and (min-width:900px) {
 .menu ul li{
   float: left;
-  padding: 10px;
-  display: inline-block;
   height: 100%;
-  border: 1px solid;
   margin-bottom: 0;
-}
 }
