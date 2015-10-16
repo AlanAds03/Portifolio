@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="Resources/css/master.css" media="screen" title="no title" charset="utf-8">
+    <script src="./Scripts/jquery-1.11.3.min.js" charset="utf-8"></script>
+
     <title></title>
   </head>
   <body>
@@ -28,15 +30,31 @@
     <section>
       <div class="corpo">
         <div class="row">
-          <div class="column column-6">
-                <h1>asd</h1>
+          <div class="column column-6 offset-3">
+                  <img src=".\Resources\img\tablet.fw.png" alt="" id="imgtablet" />
           </div>
-          <div class="column column-4">
-              <h2>abnnmbmn será outro dia </h2>
+          <div class="column column-3">
+              <input type="button" name="btnTestar" value="Testar" class="btntestar">
+              <img src=".\Resources\img\empresa.png" alt="" height="100px" id="empresa" />
           </div>
         </div>
 
       </div>
     </section>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".btntestar").on('click',function(){
+          var positionTablet = $("#imgtablet").offset().left;
+          var positionEmpresa= $("#empresa").offset().left;
+          var pos = positionEmpresa - positionTablet;
+          var cssa = 'translate(' + pos +'px,10px)'
+          alert(cssa);
+          $("#empresa").css("transform","translate(-"+ pos + "px,10px)");
+          $("#empresa").css("transition","1s ease-in");
+
+
+        })
+      })
+    </script>
   </body>
 </html>

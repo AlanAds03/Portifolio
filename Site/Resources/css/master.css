@@ -33,6 +33,10 @@ width: 100%;
   background: rgba(12,105,136,0.1);
   border: 0.5 px solid;
 }
+.imgboneco{
+  background-image:url('Resources/img/tablet.fw.png');
+  width: 500px;
+}
 
 @media screen and (min-width:800px)
 {
