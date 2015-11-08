@@ -29,7 +29,16 @@
     </header>
     <section>
       <div class="corpo">
-        <div class="row">
+        
+        <div class="row" id="linha1">
+          <div class="column column-4 offset-3">
+                  <img src="Resources/img/1071114764_f.jpg" alt="" height="350">
+          </div>
+          <div class="column column-3" style="margin-top:10%">
+              Olá seja bem vindo ao meu site, quero me apresentar e mostrar minhas experiências
+          </div>
+          </div>
+        <div class="row" id="linha2">
           <div class="column column-6 offset-3">
                   <img src=".\Resources\img\tablet.fw.png" alt="" id="imgtablet" />
           </div>
@@ -41,6 +50,26 @@
 
       </div>
     </section>
+    <footer>
+     <div class="row">
+          <div class="column column-3">
+           <ul>
+             <li><a href="as">asd</a></li>
+               <li><a href="as">asd</a></li>
+                 <li><a href="as">asd</a></li>
+                   <li><a href="as">asd</a></li>
+           </ul>
+          </div>
+          <div class="column column-3">
+            <ul>
+             <li><a href="as">asd</a></li>
+               <li><a href="as">asd</a></li>
+                <li><a href="as">asd</a></li>
+                 <li><a href="as">asd</a></li>
+           </ul>
+          </div>
+        </div>
+    </footer>
     <script type="text/javascript">
       $(document).ready(function(){
         $(".btntestar").on('click',function(){
@@ -48,7 +77,6 @@
           var positionEmpresa= $("#empresa").offset().left;
           var pos = positionEmpresa - positionTablet;
           var cssa = 'translate(' + pos +'px,10px)'
-          alert(cssa);
           $("#empresa").css("transform","translate(-"+ pos + "px,10px)");
           $("#empresa").css("transition","1s ease-in");
 

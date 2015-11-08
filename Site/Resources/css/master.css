@@ -2,6 +2,7 @@ body{
   box-sizing: border-box;
   font-family: 'Open Sans','Arial';
   margin:0;
+  background-color: #FAF0E6;
 
 }
 
@@ -12,6 +13,14 @@ header{
   padding: 0;
 
 
+}
+
+footer{
+  background: black;
+}
+
+footer{
+  color:white;
 }
 .menu{
 margin: 0;
@@ -38,6 +47,14 @@ width: 100%;
   width: 500px;
 }
 
+#linha1{
+  background:linear-gradient(to right,rgba(12,105,136,0.6),rgba(12,105,136,0.1));
+}
+
+#linha2{
+  background:linear-gradient(to right,rgba(238,121,66,0.6),rgba(238,121,66,0.6)); 
+  
+}
 @media screen and (min-width:800px)
 {
 .menu ul{
@@ -100,9 +117,8 @@ display: none;
   height: 100%;
   margin-bottom: 0;
 }
-<<<<<<< HEAD
-=======
-}
+
+
 
 
 .row::before ,
@@ -225,4 +241,4 @@ display: none;
 .offset-12 {
   margin-left: 100%;
 }
->>>>>>> origin/master
+
